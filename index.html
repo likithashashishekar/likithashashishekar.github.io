@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Agency- Web Development Agency</title>
+    <style>
+        /* Reset CSS */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        /* Basic Styles */
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #0f172a; 
+            color: white;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        
+        /* Header */
+        .header { 
+            background: #1e293b; 
+            padding: 60px 30px; 
+            text-align: center; 
+            border-radius: 10px; 
+            margin-bottom: 30px; 
+        }
+        
+        .header h1 { 
+            color: #3b82f6; 
+            font-size: 2.5rem; 
+            margin-bottom: 15px; 
+        }
+        
+        .tagline { 
+            color: #94a3b8; 
+            font-size: 1.2rem; 
+            margin-bottom: 25px; 
+        }
+        
+        .cta-btn { 
+            background: #3b82f6; 
+            color: white; 
+            border: none; 
+            padding: 12px 30px; 
+            font-size: 1.1rem; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin: 5px;
+        }
+        
+        /* Services */
+        .services { 
+            margin: 40px 0; 
+        }
+        
+        .services h2 { 
+            color: #3b82f6; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 2rem;
+        }
+        
+        .service-card { 
+            background: #1e293b; 
+            padding: 25px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+            border-left: 4px solid #3b82f6; 
+        }
+        
+        .service-card h3 { 
+            color: #60a5fa; 
+            margin-bottom: 10px; 
+            font-size: 1.3rem;
+        }
+        
+        .price { 
+            color: #10b981; 
+            font-weight: bold; 
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact */
+        .contact { 
+            background: #1e293b; 
+            padding: 40px 30px; 
+            border-radius: 10px; 
+            text-align: center; 
+            margin: 30px 0; 
+        }
+        
+        .contact h2 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+        
+        .contact p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        .footer { 
+            text-align: center; 
+            margin-top: 30px; 
+            color: #94a3b8; 
+            padding: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                padding: 20px;
+            }
+            
+            .cta-btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WebDev Pro Agency</h1>
+            <p class="tagline">Professional Web Development Services</p>
+            <button class="cta-btn" onclick="contactUs()">Start Your Project</button>
+            <button class="cta-btn" onclick="viewServices()">View Services</button>
+        </div>
+        
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Website Development</h3>
+                <p>Custom websites built with modern technologies like HTML, CSS, JavaScript, React</p>
+                <p class="price">₹50,000 - ₹5,00,000</p>
+            </div>
+            <div class="service-card">
+                <h3>E-commerce Solutions</h3>
+                <p>Online stores with payment integration, inventory management</p>
+                <p class="price">₹1,00,000 - ₹10,00,000</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Get found on Google with our comprehensive SEO services</p>
+                <p class="price">₹1,50,000/month</p>
+            </div>
+            <div class="service-card">
+                <h3>Website Maintenance</h3>
+                <p>Ongoing support, updates, and security monitoring</p>
+                <p class="price">₹50,000/month</p>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>📧 likithashekar1425@gmail.com</p>
+            <p>📱 +91 8147384275</p>
+            <p>📍 Bangalore, India</p>
+        </section>
+        
+        <div class="footer">
+            <p>&copy; 2024 WebDev Agency. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function contactUs() {
+            alert('Thank you for your interest! Contact us at: likithashekar1425@gmail.com');
+        }
+        
+        function viewServices() {
+            document.querySelector('.services').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        
+        // Simple loading message
+        console.log('Portfolio loaded successfully!');
+    </script>
+</body>
+</html>
